@@ -1,0 +1,21 @@
+{
+  "name": "xplanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/bot.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node ."
+  },
+  "keywords": [],
+  "author": "Shariar Papon",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.5.0",
+    "chalk": "^4.1.2",
+    "discord-api-types": "^0.37.35",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "process": "^0.11.10"
+  }
+}
