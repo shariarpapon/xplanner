@@ -1,6 +1,6 @@
 require("dotenv").config();
 const fs = require("fs");
-const auth_token = "MTA4Mjc4NzQwOTUxMjY0NDcyMg.Gcf8aO.iyhmkcvjhJYxhacfLqQXRZyTL9wk8rPN7MuZEA";
+const {auth_token} = process.env.AUTH_TOKEN;
 const {Client, Collection, GatewayIntentBits } = require('discord.js');
 const client = new Client({ intents: GatewayIntentBits.Guilds })
 client.commands = new Collection();
@@ -20,6 +20,7 @@ for(const folder of function_folders)
         require(`./functions/${folder}/${file}`)(client);
     }
 }
+
 
 client.handle_events();
 client.handle_commands();
